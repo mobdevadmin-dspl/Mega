@@ -1,0 +1,981 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/icon_pallet_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--android:background=""-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_edge_caption"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.datamation.megaheaters.view.vansale.Chatfont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="ATTENDANCE and DASHBOARD"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <!--Dashboard
+            <com.datamation.megaheaters.view.vansale.Chatfont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="STOCK UTILITIES"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round_edge_iconbox"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imgDownload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#80e5f6fd"
+                    android:src="@drawable/ic_download_new" />
+
+                <com.datamation.megaheaters.view.vansale.Chatfont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="DOWNLOAD STOCK"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_edge_iconbox"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgTourInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_tour" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOUR INFO"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgDashboard"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_dashone" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DASHBOARD"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgDashboard3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_dash_three" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DASHBOARD 3"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+            <!-- Transaction - mega-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_edge_caption"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.datamation.megaheaters.view.vansale.Chatfont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="PRIMARY TRANSACTIONS"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_edge_iconbox"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgVansale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_vansales" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VAN SALES"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgReturn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_return" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SALES RETURN"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgReceipt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_receipt" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RECEIPT"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <!--secondary-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_edge_caption"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.datamation.megaheaters.view.vansale.Chatfont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="SECONDARY TRANSACTIONS"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_edge_iconbox"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgNonProd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_nonprod" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NON PRODUCTIVE"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgExpense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_expensive" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EXPENSE"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--Stock Utilities-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_edge_caption"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.datamation.megaheaters.view.vansale.Chatfont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="STOCK UTILITIES"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_edge_iconbox"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgDownload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_download_new" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="DOWNLOAD STOCK"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgStockInquiry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_stock" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STOCK INQUIRY"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgPresale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_sales" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VAN SALES"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <!--Synchonize Utilities-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_edge_caption"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.datamation.megaheaters.view.vansale.Chatfont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="SYNCHRONIZE UTILITIES"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_edge_iconbox"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgSync"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_sync_new" />
+
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SYNCHRONIZE"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgUpload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_upload_new" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UPLOAD"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--Synchonize Utilities-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_edge_caption"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.datamation.megaheaters.view.vansale.Chatfont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="CONFIGURATION UTILITIES"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_edge_iconbox"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgSqlite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_database" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DATABASE"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgPrinter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_printer" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRINTER"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- Management -->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_edge_caption"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.datamation.megaheaters.view.vansale.Chatfont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="MANAGEMENT INFO"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_edge_iconbox"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgAddUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_add_user" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:id="@+id/newCustomer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NEW CUSTOMER"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_market_share" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:id="@+id/marketShare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MARKET SHARE"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgSalrep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_salesman" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SALES EXEC"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imgDashboard2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#80e5f6fd"
+                        android:src="@drawable/ic_dash_two" />
+
+                    <com.datamation.megaheaters.view.vansale.Chatfont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DASHBOARD 2"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Administrator-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_edge_caption"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.datamation.megaheaters.view.vansale.Chatfont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="UTILITIES"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_edge_iconbox"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:weightSum="2">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imgScheUpload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#80e5f6fd"
+                            android:src="@drawable/ic_schedule" />
+
+                        <com.datamation.megaheaters.view.vansale.Chatfont
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SCHEDULE UPLOAD"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+                        <ImageButton
+                            android:id="@+id/notification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="#80e5f6fd"
+                            android:src="@drawable/ic_messages" />
+
+                        <include
+                            layout="@layout/badge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/notification"
+                            android:layout_alignParentTop="true" />
+
+
+                        <com.datamation.megaheaters.view.vansale.Chatfont
+                            android:id="@+id/textView13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/notification"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center_vertical"
+                            android:text="MESSAGES"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:id="@+id/Chat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/textView12"
+                            android:layout_centerHorizontal="true"
+                            android:background="#80e5f6fd"
+                            android:src="@drawable/ic_chat" />
+
+                        <com.datamation.megaheaters.view.vansale.Chatfont
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="CHAT"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

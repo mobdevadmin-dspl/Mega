@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "35979423751",
+    "firebase_url": "https://indrasfa-c2d93.firebaseio.com",
+    "project_id": "indrasfa-c2d93",
+    "storage_bucket": "indrasfa-c2d93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:35979423751:android:8f816305885c2b43",
+        "android_client_info": {
+          "package_name": "com.datamation.indrasfa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "35979423751-optammdm7c8u8nujg110tilhjsh717ju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-vkZ80i0Rl-5GlUhBcDRqBynVJbchcK0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

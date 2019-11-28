@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <com.datamation.megaheaters.control.FinacFont
+        android:id="@+id/debCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/blueColor"
+        android:textSize="@dimen/font_for_all"
+        android:textStyle="bold" />
+
+    <com.datamation.megaheaters.control.FinacFont
+        android:id="@+id/debName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/list_background_pressed"
+        android:textSize="@dimen/font_size_small"
+        android:textStyle="bold" />
+
+    <com.datamation.megaheaters.control.FinacFont
+        android:id="@+id/debAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/list_background_pressed"
+        android:textSize="@dimen/font_size_intermed"
+        android:textStyle="italic" />
+
+</LinearLayout>
